@@ -1,0 +1,7 @@
+backup/*
+.idea/*
+mail/*
+src/*
+vendors/*
+inc/*
+phpqrcode/*

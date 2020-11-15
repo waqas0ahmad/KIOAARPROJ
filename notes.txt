@@ -1,0 +1,12 @@
+ALTER TABLE `qrproject`.`company` 
+ADD COLUMN `Email` VARCHAR(45) NULL AFTER `Approved`;
+
+DROP TABLE IF EXISTS `companymenu`;
+CREATE TABLE `companymenu` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(500) DEFAULT NULL,
+  `menuname` varchar(45) DEFAULT NULL,
+  `menuprice` decimal(10,2) DEFAULT NULL,
+  `deleted` bit(1) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
